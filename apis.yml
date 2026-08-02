@@ -1,7 +1,18 @@
 aid: vespucci
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vespucci.png
 name: Vespucci
-description: Vespucci is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vespucci (Vespucci Analytics) is a product-analytics platform that helps teams understand why their users engage with a product. Rather than replacing existing analytics, it connects to the event data companies already collect in Amplitude or Segment (via Reverse ETL) and applies statistical and AI models to automatically surface the drivers of activation, retention, churn, and engagement. It provides 24/7 monitoring with automated alerts when behavioral patterns shift, user segmentation, and story-style dashboards, and can push identified segments to activation tools such as OneSignal, MailChimp, and Brevo. Founded in 2021 and based in Brussels, Belgium, Vespucci is backed by Seedcamp.
 url: https://raw.githubusercontent.com/api-evangelist/vespucci/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +22,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Analytics
+- Product Analytics
+- Data
+- Machine Learning
+- User Behavior
+- Segmentation
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +39,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vespucci-domain-security.yml
 - type: Website
-  url: http://vespuccianalytics.com
+  url: https://vespuccianalytics.com
+- type: Documentation
+  url: https://docs.vespuccianalytics.com
+- type: SignUp
+  url: https://dashboard.vespuccianalytics.com/account/register
+- type: Login
+  url: https://dashboard.vespuccianalytics.com/account/login
+- type: PrivacyPolicy
+  url: https://www.notion.so/vespucci/Privacy-Policy-35ad2f80f74644b0a6fb20595744ccb1
+- type: LLMsTxt
+  url: llms/vespucci-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
